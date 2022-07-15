@@ -12,7 +12,7 @@ Frontend:
 - RxJs
 
 Backend: 
-- ASP.NET Core (version 6)
+- ASP.NET Core (version 3.1)
 
 
 ## Описание API:

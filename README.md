@@ -28,6 +28,5 @@ Backend:
 ## Инструкция по запуску:
 1. Backend:
   - Из Vusial Studio: Открываете файл MeterWebApp.sln и запускаете проект;
-  - Из Vusial Studio Code: Открываете папку WebApplication8 и запускаете файл Program.cs
 2. Frontend:
   - Из Vusial Studio Code: Открываете папку ClientApp и выполняете команду ng serve

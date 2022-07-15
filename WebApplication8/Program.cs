@@ -30,7 +30,7 @@ namespace WebApplication8
 
                 for (int i = 1; i <= 10; i++)
                 {
-                    Meter meter = new Meter { Name = $"—четчик-{i}" };
+                    Meter meter = new Meter { Name = $"Meter-{i}" };
                     meters.Add(meter);
                     db.Meters.Add(meter);
                 }

@@ -20,3 +20,7 @@ Backend:
 ```sh
 [GET] https://localhost:44379/api/meter
 ```
+2. Список всех записей счетчика, параметрами являются id счетчика и дата записей:
+```sh
+[GET] https://localhost:44379/api/record/1&2022-07-22
+```

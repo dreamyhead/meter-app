@@ -1,0 +1,18 @@
+@import "../../../styles.scss";
+.card {
+    width: 80%;
+    display: flex;
+    border-radius: 15px;
+    background-color: $bg_color_card;
+    box-shadow: 1px 1px 10px #c5c5c5;
+}
+
+.card-content {
+    width: 100%;
+    margin: 2rem;
+    .card-body {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+}

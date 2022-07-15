@@ -1,0 +1,13 @@
+.datepicker-box {
+    width: 100%;
+    height: 100px;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    .datepicker {
+        width: 50%;
+        height: 50px;
+        border-radius: 5px;
+    }
+}

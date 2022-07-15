@@ -1,0 +1,7 @@
+<div class="main-page">
+    <app-card class="card">
+        <app-list style="width: 50%; display: flex;" (selectedOption)="updateMeterId($event)"></app-list>
+        <app-datepicker style="width: 50%; display: flex;" (selectedDate)="updateDate($event)"></app-datepicker>
+        <app-datagrid style="width: 100%; display: flex;" [meterId]="id" [recordDate]="date"></app-datagrid>
+    </app-card>
+</div>

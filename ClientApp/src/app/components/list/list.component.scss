@@ -1,0 +1,16 @@
+.list-box {
+    width: 100%;
+    height: 100px;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    .list {
+        width: 50%;
+        height: 50px;
+        border-radius: 5px;
+        outline: none;
+        &:focus {
+            outline: none;
+        }
+    }
+}

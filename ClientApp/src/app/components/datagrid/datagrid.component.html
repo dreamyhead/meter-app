@@ -1,0 +1,35 @@
+<div style="width: 100%;display: flex; flex-direction: column;">
+    <div class="datagrid">
+        <table>
+            <thead>
+                <tr>
+                    <th></th>
+                    <th>Активная, приём, кВт</th>
+                    <th>Активная, отдача, кВт</th>
+                    <th>Реактивная, приём, кВт</th>
+                    <th>Реактивная, отдача, кВт</th>
+                </tr>
+            </thead>
+
+            <tbody *ngIf="records; else s">
+                <tr *ngFor="let record of records">
+                    <th>{{record.lastDateTime | date: 'HH:mm'}} - {{record.dateTime | date: 'HH:mm'}}</th>
+                    <td>{{record.activeReception}}</td>
+                    <td>{{record.activeReturn}}</td>
+                    <td>{{record.reactiveReception}}</td>
+                    <td>{{record.reactiveReturn}}</td>
+                </tr>
+            </tbody>
+            <ng-template #s>
+                <tr *ngFor="let i of getRows()">
+                    <th>{{ this.time | date: 'HH:mm'}} - {{getTime() | date: 'HH:mm'}}</th>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </ng-template>
+        </table>
+    </div>
+    <button class="btn" (click)="sbmt()">Показать данные</button>
+</div>

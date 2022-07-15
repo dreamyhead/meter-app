@@ -1,0 +1,6 @@
+<div class="list-box">
+    <select size="1" class="list" [(ngModel)]="select" (ngModelChange)="pickOption($event)">
+      <option [value]="null">Не выбрано</option>
+      <option *ngFor="let item of meters" [value]="item.id" >{{item.name}}</option>
+    </select>
+</div>

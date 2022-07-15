@@ -24,3 +24,9 @@ Backend:
 ```sh
 [GET] https://localhost:44379/api/record/1&2022-07-22
 ```
+
+## Инструкция по запуску:
+1. Backend:
+  - asdasd
+2. Frontend:
+  -asdasdas

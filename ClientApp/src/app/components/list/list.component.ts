@@ -11,7 +11,7 @@ export class ListComponent implements OnInit {
 
   @Output() selectedOption: EventEmitter<number> = new EventEmitter<number>();
 
-  public select: any = null;
+  public select: (null | number) = null;
   public meters: Meters[] = [];
 
   constructor(private http: HttpClient) {}

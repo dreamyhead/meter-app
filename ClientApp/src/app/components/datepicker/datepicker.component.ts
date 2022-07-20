@@ -8,8 +8,9 @@ import { Component, Output, EventEmitter } from '@angular/core';
 
 export class DatepickerComponent{
 
-  public select: any = null;
   @Output() selectedDate: EventEmitter<Date> = new EventEmitter<Date>();
+
+  public select: any = null;
 
   selected(date: Date) {
     this.selectedDate.emit(date)

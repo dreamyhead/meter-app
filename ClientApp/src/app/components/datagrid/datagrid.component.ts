@@ -6,8 +6,8 @@ import { Records } from '../../interfaces/Records';
   selector: 'app-datagrid',
   templateUrl: './datagrid.component.html',
   styleUrls: ['./datagrid.component.scss'],
-  //changeDetection: ChangeDetectionStrategy.OnPush,
 })
+
 export class DatagridComponent implements OnInit{
 
   @Input() meterId: number;
@@ -31,11 +31,8 @@ export class DatagridComponent implements OnInit{
     return new Array(48);
   }
 
-  sbmt() {
-    console.log(this.meterId)
-    console.log(this.recordDate)
-
-    if (this.meterId!= null && this.recordDate != null) {
+  submit() {
+    if (this.meterId != null && this.recordDate != null) {
       this.http.get<Records[]>(`https://localhost:44379/api/record/${this.meterId}&${this.recordDate}`)
       .subscribe(response => this.records = response);
     }

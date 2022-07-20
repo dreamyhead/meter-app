@@ -9,10 +9,10 @@ import { HttpClient } from '@angular/common/http';
 
 export class ListComponent implements OnInit {
 
+  @Output() selectedOption: EventEmitter<number> = new EventEmitter<number>();
+
   public select: any = null;
   public meters: Meters[] = [];
-
-  @Output() selectedOption: EventEmitter<number> = new EventEmitter<number>();
 
   constructor(private http: HttpClient) {}
 

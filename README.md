@@ -8,7 +8,6 @@
 ## Стэк технологий:
 Frontend: 
 - Angular
-- Angular Material
 - RxJs
 
 Backend: 

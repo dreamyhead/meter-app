@@ -8,7 +8,7 @@ namespace WebApplication8.Models
     public class Meter
     {
         public int Id { get; set; }
-        public string? Name { get; set; }
+        public string Name { get; set; }
         public List<Record> Records { get; set; } = new List<Record>();
     }
 }

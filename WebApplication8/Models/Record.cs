@@ -10,10 +10,10 @@ namespace WebApplication8.Models
     public class Record
     {
         public int Id { get; set; }
-        public int? MeterID { get; set; }
+        public int MeterID { get; set; }
 
         [ForeignKey("MeterID")]
-        public Meter? Meter { get; set; }
+        public Meter Meter { get; set; }
         public string Date { get; set; } 
         [DataType(DataType.DateTime)]
         public DateTime LastDateTime { get; set; }

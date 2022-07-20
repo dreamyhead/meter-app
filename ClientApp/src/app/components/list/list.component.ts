@@ -1,3 +1,4 @@
+import { HttpRequestService } from './../../services/http-request.service';
 import { Meters } from './../../interfaces/Meters';
 import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
@@ -11,17 +12,17 @@ export class ListComponent implements OnInit {
 
   @Output() selectedOption: EventEmitter<number> = new EventEmitter<number>();
 
-  public select: (null | number) = null;
+  public select: (null | number | undefined) = null;
   public meters: Meters[] = [];
 
-  constructor(private http: HttpClient) {}
+  constructor(private httpRequestService: HttpRequestService) {}
 
   ngOnInit() {
-    this.http.get<Meters[]>('https://localhost:44379/api/meter')
+    this.httpRequestService.getAllMeters()
       .subscribe(response => this.meters = response);
   }
 
   pickOption(id:number) {
-    this.selectedOption.emit(id)
+    this.selectedOption.emit(id);
   }
 }

@@ -1,3 +1,4 @@
+import { HttpRequestService } from './../../services/http-request.service';
 import { Component, AfterContentChecked, Input, ChangeDetectionStrategy, OnInit} from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Records } from '../../interfaces/Records';
@@ -16,7 +17,7 @@ export class DatagridComponent implements OnInit{
   public records: Records[]
   public time: Date = new Date()
 
-  constructor(private http: HttpClient) {}
+  constructor(private httpRequestService: HttpRequestService) {}
 
   ngOnInit() {
     this.time.setHours(0,0,0,0)
@@ -33,8 +34,8 @@ export class DatagridComponent implements OnInit{
 
   submit() {
     if (this.meterId != null && this.recordDate != null) {
-      this.http.get<Records[]>(`https://localhost:44379/api/record/${this.meterId}&${this.recordDate}`)
-      .subscribe(response => this.records = response);
+      this.httpRequestService.getAllMeterParams(this.meterId, this.recordDate)
+        .subscribe(response => this.records = response);
     }
   }
 }

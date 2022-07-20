@@ -21,7 +21,7 @@ Backend:
 ```
 2. Список всех записей счетчика, параметрами являются id счетчика и дата записей:
 ```sh
-[GET] https://localhost:44379/api/record/1&2022-07-22
+[GET] https://localhost:44379/api/record/{{id}}&{{date: yy-mm-dd}}
 ```
 
 ## Инструкция по запуску:

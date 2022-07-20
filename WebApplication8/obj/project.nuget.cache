@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "1UCegk1KwVp+91IjAaAq3RliPzkMfQO+y4oZrn5uU9EkqY272bJ4oQXZTGrjP9ClnQZkr22nCRzkTBpErqa0bg==",
+  "dgSpecHash": "Q8HbahAXdgUT4cgDqFks2r6MDf0PuNwLSAhfOkfUvhbmO2K9F6PhGfUT+7MZE7SkQaRS+jmmOhw4FUpb1UJYow==",
   "success": true,
-  "projectFilePath": "C:\\Users\\aleks\\Desktop\\Новая папка (3)\\meter-app\\WebApplication8\\MeterWebApp.csproj",
+  "projectFilePath": "C:\\Users\\aleks\\Desktop\\tester\\meter-app\\WebApplication8\\MeterWebApp.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\aleks\\.nuget\\packages\\microsoft.aspnetcore.jsonpatch\\3.1.0\\microsoft.aspnetcore.jsonpatch.3.1.0.nupkg.sha512",
     "C:\\Users\\aleks\\.nuget\\packages\\microsoft.aspnetcore.mvc.newtonsoftjson\\3.1.0\\microsoft.aspnetcore.mvc.newtonsoftjson.3.1.0.nupkg.sha512",

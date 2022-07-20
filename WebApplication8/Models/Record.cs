@@ -19,9 +19,9 @@ namespace WebApplication8.Models
         public DateTime LastDateTime { get; set; }
         [DataType(DataType.DateTime)]
         public DateTime DateTime { get; set; }
-        public double ActiveReception { get; set; }
-        public double ActiveReturn { get; set; }
-        public double ReactiveReception { get; set; }
-        public double ReactiveReturn { get; set; }
+        public double? ActiveReception { get; set; }
+        public double? ActiveReturn { get; set; }
+        public double? ReactiveReception { get; set; }
+        public double? ReactiveReturn { get; set; }
     }
 }

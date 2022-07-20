@@ -1316,11 +1316,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\aleks\\Desktop\\Новая папка (3)\\meter-app\\WebApplication8\\MeterWebApp.csproj",
+      "projectUniqueName": "C:\\Users\\aleks\\Desktop\\tester\\meter-app\\WebApplication8\\MeterWebApp.csproj",
       "projectName": "MeterWebApp",
-      "projectPath": "C:\\Users\\aleks\\Desktop\\Новая папка (3)\\meter-app\\WebApplication8\\MeterWebApp.csproj",
+      "projectPath": "C:\\Users\\aleks\\Desktop\\tester\\meter-app\\WebApplication8\\MeterWebApp.csproj",
       "packagesPath": "C:\\Users\\aleks\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\aleks\\Desktop\\Новая папка (3)\\meter-app\\WebApplication8\\obj\\",
+      "outputPath": "C:\\Users\\aleks\\Desktop\\tester\\meter-app\\WebApplication8\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
